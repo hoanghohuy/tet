@@ -55,6 +55,10 @@
     gap: 38px;
 }
 
+.tet-banner .tet-banner-image {
+    width: 100%;
+}
+
 .tet-banner .tet-banner-text {
     max-width: 912px;
     margin: 0 auto;
@@ -224,9 +228,8 @@
 
 .tet-contact {
     padding: 180px 0;
-    max-width: 1600px;
     display: flex;
-    justify-content: space-between;
+    gap: 90px;
     align-items: center;
 }
 
@@ -497,8 +500,29 @@ div:where(.swal2-container) div:where(.swal2-popup) {
     background: url('/images/popup_mask.png') no-repeat center center;
 }
 
-/* .swal2-container .swal2-confirm {
-    width: 348px;
-    height: 88px;
-    background: url('/images/popup_xacnhan.png') no-repeat center center;
-} */
+div:where(.swal2-container).swal2-backdrop-show {
+    background: rgba(57, 0, 0, 0.94);
+}
+
+@media only screen and (max-width: 1400px) {
+    .tet-contact {
+        max-width: 100%;
+    }
+    .tet-container .tet-contact .tet-contact-banner {
+        width: 60%;
+    }
+        .tet-container .tet-contact .tet-contact-form {
+            width: 40%;
+        }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .tet-container .tet-contact .tet-contact-banner {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
