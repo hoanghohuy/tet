@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.tet-container {width: 100%; min-height: 100vh; position: relative;background-color: #9E061B;}
+.tet-container .tet-mask-top-left {
+    position: fixed;
+    z-index: 2;
+    left: 0; 
+    top: 0;
+}
+.tet-container .tet-mask-top-right {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+.tet-container .tet-mask-bot-left {
+    position: fixed;
+    z-index: 2; 
+    left: 0; 
+    bottom: -138px;
+}
+
+.tet-container .tet-mask-bot-right {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: -90px;
+}
+
+
+.tet-header {
+    padding-top: 52px;
+    max-width: 634px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tet-header .tet-header-logo {
+    width: 270px;
+    height: auto;
+}
+
+.tet-header .tet-header-text {
+    width: 300px;
+    height: auto;
+}
+
+.tet-banner {
+    padding-top: 76px;
+    max-width: 1166px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.tet-banner .tet-banner-text {
+    max-width: 912px;
+    margin: 0 auto;
+    color: #FFF;
+        font-family: Mulish;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+}
+
+.tet-banner .tet-banner-tel {
+    color: #F1E90A;
+    font-weight: 800;
+}
+
+.tet-tour {
+    max-width: 1152px;
+    margin: 0 auto;
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.tour-trongnuoc, .tour-quocte {
+    position: relative;
+}
+
+.tour-trongnuoc .tour-trongnuoc-mask {
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.tour-quocte .tour-quocte-mask {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.tour-tab-img {
+    width: 280px;
+    height: auto;
+}
+
+.tet-tour .tet-custom-nav-tab {
+    /* height: 137px; */
+    background-color: #AD0016;
+    box-shadow: 0px 9px 2px -2px #C70017 inset;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+}
+
+/* CUSTOM NAVBAR */
+
+.tet-tour .nav-tabs>li.active>a {
+    background-color: #8A0012;
+    border: none;
+}
+
+.tet-tour .nav-tabs.nav-justified>li>a {
+    border: none;
+    outline: none;
+}
+
+.tet-tour .nav-tabs.nav-justified>li>a:focus-within {
+    border: none;
+    outline: none;
+}
+
+.tet-tour .nav-tabs.nav-justified>li>a:hover {
+    border: none;
+    background-color: #8A0012;
+}
+
+.tet-tour.nav-tabs.nav-justified>.active>a:focus {  
+    border: none;
+}
+
+.tet-tour .nav-tabs>li.active>a:hover {
+    border: none;
+}
+
+.tour-main {
+    background: #9A0116;
+    border-radius: 40px;
+}
+
+
+.tet-tour .tour-header {
+    width: 437px;
+    margin: 0 auto;
+}
+
+.tet-tour-list-content {
+    padding: 48px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tet-tour-item {
+    position: relative;
+    padding: 12px;
+    width: 230px;
+    height: 243px;
+    /* background: url('/images/tour/tour_mask.png') no-repeat; */
+}
+
+.tet-tour-item-mask {
+    width: 230px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.tet-tour-item-img {
+    width: 207px;
+    height: 122px;
+    object-fit: cover;
+}
+
+.tet-tour-item-name {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+        /* 14.286% */
+}
+
+.tet-tour-item-price {
+    position: relative;
+        z-index: 1;
+    color: #EFE13D;
+        text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+
+.tet-tour-item-order {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 142px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: 20px;
+    border: 3px solid #F2DD21;
+    background: linear-gradient(180deg, #064ED4 19.1%, #003685 100%);
+    color: #FFF;
+        font-family: UTM Penumbra;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+}
+
+.tet-contact {
+    padding: 180px 0;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tet-form-container {
+    width: 617px;
+    height: 436px;
+    background: url('/images/form-mask.png');
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.tet-contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.tet-form-title {
+    text-align: center;
+    color: #E4E25B;
+    font-family: UTM Penumbra;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 114.286% */
+}
+
+.tet-form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tet-form-input {
+    height: 58px;
+    border-radius: 500px;
+    outline: none;
+    border: 2px solid #DF8D57;
+    padding: 0 28px;
+    background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
+}
+
+.tet-form-input::placeholder {
+    color: #E29561;
+    
+        font-family: Mulish;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        /* 188.235% */
+}
+
+.tet-form-destination {
+    height: 58px;
+    font-family: Mulish;
+    font-size: 17px;
+        border-radius: 500px;
+        outline: none;
+        border: 2px solid #DF8D57;
+        padding: 0 28px;
+        color: #DF8D57;
+        font-weight: 700;
+        background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
+}
+
+.tet-form-submit {
+    border: none;
+    background-color: transparent;
+    width: 334px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+/* TET THANKS */
+.tet-thanks {
+    margin-top: 120px;
+    padding: 90px 0;
+    background-color: #940013;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tet-thanks-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tet-thanks-title {
+    color: #E5E158;
+        text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        /* 88.889% */
+}
+
+.tet-thanks-desc {
+    max-width: 451px;
+    margin: 0 auto;
+    color: #F1F6B1;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 136.364% */
+}
+
+.tet-thanks-slider {
+    width: 100%;
+    height: 277px;
+}
+
+.slider-image-item {
+    height: 277px;
+}
+
+/* Footer */
+.tet-footer {
+    border-top: 4px solid #E5E056;
+}
+
+.tet-footer-divider {
+    height: 57px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.tet-footer-mask {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.tet-footer .tet-top-container {
+    padding: 58px 0 114px;
+    max-width: 824px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+}
+
+.tet-footer .tet-footer-bottom {
+    background-color: #21975A;
+    height: 157px;
+    z-index: 2;
+    display: block;
+}
+
+.tet-footer .tet-footer-bottom .tet-bottom-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    gap: 60px;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tet-footer .tet-footer-bottom .footer-qr {
+    position: absolute;
+    transform: translateY(-100px);
+}
+
+.tet-footer .footer-info-container { 
+padding-left: 240px;
+    display: flex; flex-direction: column; gap: 10px
+}
+
+.tet-footer .footer-info {
+    display: flex;
+    gap: 20px;
+}
+
+.tet-footer .footer-info-website {
+    display: flex;
+    gap: 20px;
+}
+
+
+.tet-footer .tet-footer-bottom .footer-info-text {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.tet-info-company {
+    max-width: 232px;
+    text-transform: uppercase;
+    color: #FFF;
+        text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        /* 65.217% */
+}
+
+.tet-info-right {
+    display: flex;
+    gap: 40px;
+    height: 45px;
+}
+
+.tet-tongdai-text {
+    color: #fff;
+    text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        /* 118.75% */
+}
+
+.tet-tongdai-num {
+    color: #F1DA0A;
+        text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        /* 63.333% */
+}
+
+.swal2-container .swal2-title {
+    color: #E4E25B;
+    width: 500px;
+    margin: 0 auto;
+        text-align: center;
+        font-family: UTM Penumbra;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        /* 85.714% */
+}
+
+.swal2-container .swal2-html-container {
+        color: #E4E25B;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    padding: 55px;
+    width: 620px;
+    height: 436px;
+    background: url('/images/popup_mask.png') no-repeat center center;
+}
+
+/* .swal2-container .swal2-confirm {
+    width: 348px;
+    height: 88px;
+    background: url('/images/popup_xacnhan.png') no-repeat center center;
+} */
