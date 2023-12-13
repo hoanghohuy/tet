@@ -6,7 +6,7 @@ $(document).ready(function(){
         border: 8,
         margin:10,
         autoplay:true,
-        autoplayTimeout:1000,
+        autoplayTimeout:2000,
         loop: true,
         autoWidth:true,
     })

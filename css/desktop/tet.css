@@ -48,6 +48,7 @@
 }
 
 .tet-banner {
+    position: relative;
     padding-top: 76px;
     max-width: 1166px;
     margin: 0 auto;
@@ -617,6 +618,7 @@ div:where(.swal2-container).swal2-backdrop-show {
 
     .tet-container .tet-contact .tet-contact-banner {
         width: 100%;
+        max-width: unset;
     }
     .tet-tour {
         padding: 0 32px;
@@ -639,6 +641,9 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 280px;
         height: auto;
     }
+        .tet-contact-header {
+            padding: 32px;
+        }
 }
 
 @media only screen and (max-width: 992px) {
@@ -676,6 +681,12 @@ div:where(.swal2-container).swal2-backdrop-show {
     .tet-thanks-title {
         font-size: 28px;
     }
+    .tet-top-logo-img {
+        width: 240px;
+    }
+    .tet-top-text-img {
+        width: 240px;
+    }
     
 }
 
@@ -696,8 +707,96 @@ div:where(.swal2-container).swal2-backdrop-show {
     .tet-form-submit {
         width: unset;
     }
-        .tet-contact-form {
-            width: 100%;
+    .tet-contact-form {
+        width: 100%;
+    }
+    .tet-banner .tet-banner-text {
+        line-height: unset;
+        font-size: 15px;
+    }
+    .tet-container .tet-tour {
+        gap: 24px;
+    }
+    .tet-contact {
+        gap:24px;
+        padding: 16px 0;
+        flex-direction: column-reverse;
+    }
+    .tet-thanks {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+    .tet-contact-header {
+        padding: 12px;
+    }
+    .tet-contact-img {
+        width: 240px;
+    }
+    .tet-top-logo-img {
+        width: 180px;
+    }
+
+    .tet-top-text-img {
+        width: 180px;
+    }
+    .tet-footer .tet-top-container {
+        padding: 32px;
+        gap: 12px;
+    }
+    .tet-top-logo-img {
+        width: 120px;
+    }
+    .tet-top-text-img {
+        width: 120px;
+    }
+    .footer-qr {
+        position: relative;
+        width: 100px;
+    }
+    .tet-footer .footer-info-container {
+        padding-left: 0;
+    }
+    .tet-footer-mask {
+        position: relative;
+        display: none;
+    }
+    .tet-bottom-container {
+        display: block;
+        flex-direction: column;
+            gap: 8px;
+    }
+        .tet-footer .tet-footer-bottom {
+            height: unset;
+        }
+        .tet-info-right {
+            flex-direction: column;
+            gap: 4px;
+            height: unset;
+        }  
+        .tet-footer-divider {
+            display: none;
+        }
+                .tet-info-company {
+                    max-width: unset;
+                    font-size: 14px;
+                }
+        .tet-footer .tet-footer-bottom .footer-qr {
+            position: relative;
+            transform: none;
+        }
+    .tet-footer-bottom {
+        padding: 0 12px;    
+    }
+        .tet-footer .tet-footer-bottom .footer-info-text {
+            font-size: 16px;
+        }
+
+        .tet-footer .footer-info {
+            align-items: center;
+        }
+
+        .tet-footer .tet-footer-bottom .tet-bottom-container {
+            gap: 8px;
         }
 }
 
@@ -705,8 +804,23 @@ div:where(.swal2-container).swal2-backdrop-show {
 
     .tet-header {
         flex-direction: column;
-        padding-top: 12px;
+        padding-top: 40px;
+        gap: 0;
     }
+    .tet-container .tet-banner {
+        padding: 24px 12px;
+        gap: 24px;
+    }
+
+    .tet-container .tet-tour {
+        margin-top: 60px;
+        padding: 0 12px;
+    }
+
+    .tet-tour-list-content {
+        padding: 24px 0;
+    }
+    
     .tet-container .tet-mask-top-left {
         width: 120px;
     }
@@ -716,22 +830,25 @@ div:where(.swal2-container).swal2-backdrop-show {
     }
 
     .tet-container .tet-mask-bot-left {
-        width: 120px;
+        width: 90px;
+        bottom: -50px;
     }
 
     .tet-container .tet-mask-bot-right {
-        width: 120px;
+        width: 90px;
+        bottom: -34px;
     }
     .tour-quocte .tour-quocte-mask, .tour-trongnuoc .tour-trongnuoc-mask {
-            width: 120px;
-        }
-        .tet-tour .tet-custom-nav-tab {
-            border-radius: 0px;
-            box-shadow: none;
-        }
+        width: 120px;
+    }
+    .tet-tour .tet-custom-nav-tab {
+        border-radius: 0px;
+        box-shadow: none;
+    }
     .tet-tour-item {
-        width: 100%;
+        width: 124px;
         height: unset;
+        padding: 0;
     }
     .tet-tour-item-mask {
         width: 100%;
@@ -739,14 +856,60 @@ div:where(.swal2-container).swal2-backdrop-show {
     .tet-tour-item-img {
         width: 100%;
         height: auto;
+        padding: 4px;
+    }
+    .tet-tour-item-name {
+        font-size: 11px;
+        margin: 0;
+    }
+    .tet-tour-item-price {
+        font-size: 12px;
     }
     .tet-thanks-text {
         padding: 0 32px;
+        gap: 4px;
     }
     .tet-thanks-title {
         font-size: 18px;
     }
     .tet-thanks-desc {
         font-size: 16px;
+    }
+    .tet-tour .tour-header {
+        width: 240px;
+    }
+    .tet-tour-item-order {
+        font-size: 10px;
+        width: unset;
+        height: unset;
+        line-height: unset;
+        border-width: 1px;
+        padding: 4px 12px;
+        margin-top: 0;
+    }
+    .tet-tour-list-content {
+        gap: 24px;
+    }
+    .tet-form-container {
+        border-radius: 12px;
+        border: 2px solid #F2DD21;
+        justify-content: center;
+        height: unset;
+        padding: 16px;
+        gap: 12px;
+    }
+    .tet-form-title {
+        font-size: 18px;
+    }
+    .tet-form-submit {
+        margin-top: 0;
+        height: unset;
+        width: 150px;
+    }
+    .tet-header .tet-header-logo {
+        width: 120px;
+    }
+    .tet-form-input, .tet-form-destination {
+        height: 48px;
     }
 }
