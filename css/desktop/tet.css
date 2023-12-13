@@ -34,6 +34,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .tet-header .tet-header-logo {
@@ -101,6 +102,7 @@
 }
 
 .tour-tab-img {
+    padding: 8px 0;
     width: 280px;
     height: auto;
 }
@@ -152,6 +154,10 @@
 .tet-tour .tour-header {
     width: 437px;
     margin: 0 auto;
+}
+
+.tet-tour .tour-header .tour-header-img {
+    width: 100%;
 }
 
 .tet-tour-list-content {
@@ -233,10 +239,20 @@
     align-items: center;
 }
 
+.tet-contact-banner {
+    max-width: 880px;
+    width: 50%;
+}
+
+.tet-contact-form {
+    max-width: 617px;
+    width: 40%;
+}
+
 .tet-form-container {
-    width: 617px;
+    width: 100%;
     height: 436px;
-    background: url('/images/form-mask.png');
+    background: url('/images/form-mask.png') no-repeat center center;
     padding: 56px;
     display: flex;
     flex-direction: column;
@@ -244,9 +260,15 @@
 }
 
 .tet-contact-header {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 44px;
+}
+
+.tet-contact-img {
+    width: 100%;
 }
 
 .tet-form-title {
@@ -307,6 +329,10 @@
     margin-top: 28px;
 }
 
+.tet-form-submit-img {
+    width: 100%;
+}
+
 /* TET THANKS */
 .tet-thanks {
     margin-top: 120px;
@@ -359,6 +385,7 @@
 /* Footer */
 .tet-footer {
     border-top: 4px solid #E5E056;
+    overflow: hidden;
 }
 
 .tet-footer-divider {
@@ -379,6 +406,8 @@
     max-width: 824px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 64px;
 }
 
@@ -505,24 +534,219 @@ div:where(.swal2-container).swal2-backdrop-show {
 }
 
 @media only screen and (max-width: 1400px) {
+
+    .tet-header {
+        gap: 32px;
+    }
+
+    .tet-tour .tour-header {
+        width: 360px;
+    }
+
+    .tour-tab-img {
+        width: 240px;
+    }
+
+    .tet-container .tet-mask-top-left {
+        width: 300px;
+    }
+
+    .tet-container .tet-mask-top-right {
+        width: 300px;
+    }
+
+    .tet-container .tet-mask-bot-left {
+        width: 200px;
+    }
+
+    .tet-container .tet-mask-bot-right {
+        width: 200px;
+    }
+    
     .tet-contact {
         max-width: 100%;
     }
-    .tet-container .tet-contact .tet-contact-banner {
-        width: 60%;
-    }
-        .tet-container .tet-contact .tet-contact-form {
-            width: 40%;
+
+        .tet-header {
+            max-width: unset;
+            gap: 60px;
+            justify-content: center;
         }
+
+    .tet-header .tet-header-logo {
+        width: 240px;
+    }
+        .tet-header .tet-header-text {
+            width: 258px;
+        }
+    .tet-contact-img {
+        width: 300px;
+        max-width: unset;
+    }
 
 }
 
 @media only screen and (max-width: 1200px) {
+
+    .tet-container .tet-mask-top-left {
+        width: 250px;
+    }
+
+    .tet-container .tet-mask-top-right {
+        width: 250px;
+    }
+
+    .tet-container .tet-mask-bot-left {
+        width: 200px;
+    }
+
+    .tet-container .tet-mask-bot-right {
+        width: 200px;
+    }
+
+        .tet-header {
+            gap: 24px;
+        }
+        .tet-header .tet-header-logo {
+            width: 224px;
+        }
+
+        .tet-header .tet-header-text {
+            width: 240px;
+        }
+
     .tet-container .tet-contact .tet-contact-banner {
-        width: 400px;
+        width: 100%;
+    }
+    .tet-tour {
+        padding: 0 32px;
+    }
+
+    .tour-tab-img {
+        width: 200px;
+    }
+    .tet-banner {
+        padding: 76px 32px 0 32px;
+    }
+    .tet-contact {
+        flex-direction: column;
+    }
+    .tet-top-logo-img {
+        width: 280px;
+        height: auto;
+    }
+    .tet-top-text-img {
+        width: 280px;
+        height: auto;
     }
 }
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .tet-container .tet-mask-top-left {
+        width: 200px;
+    }
 
-@media only screen and (max-width: 768px) {}
+    .tet-container .tet-mask-top-right {
+        width: 200px;
+    }
+
+    .tet-container .tet-mask-bot-left {
+        width: 200px;
+    }
+
+    .tet-container .tet-mask-bot-right {
+        width: 200px;
+    }
+    
+    .tet-header .tet-header-logo {
+        width: 180px;
+    }
+    .tet-header .tet-header-text {
+        width: 180px;
+    }
+    .tet-tour .tour-header {
+        width: 280px;
+    }
+    .tour-tab-img {
+        width: 180px;
+    }
+    .tour-quocte .tour-quocte-mask, .tour-trongnuoc .tour-trongnuoc-mask {
+        width: 180px;
+    }
+    .tet-thanks-title {
+        font-size: 28px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .tet-tour-item {
+        width: 188px;
+    }
+    .tet-tour-item-mask {
+        width: 188px;
+    }
+    .tet-tour-item-img {
+        width: 168px;
+        height: 96px;
+    }
+    .tet-tour-item-name {
+        margin-top: 4px;
+    }
+    .tet-form-submit {
+        width: unset;
+    }
+        .tet-contact-form {
+            width: 100%;
+        }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .tet-header {
+        flex-direction: column;
+        padding-top: 12px;
+    }
+    .tet-container .tet-mask-top-left {
+        width: 120px;
+    }
+
+    .tet-container .tet-mask-top-right {
+        width: 120px;
+    }
+
+    .tet-container .tet-mask-bot-left {
+        width: 120px;
+    }
+
+    .tet-container .tet-mask-bot-right {
+        width: 120px;
+    }
+    .tour-quocte .tour-quocte-mask, .tour-trongnuoc .tour-trongnuoc-mask {
+            width: 120px;
+        }
+        .tet-tour .tet-custom-nav-tab {
+            border-radius: 0px;
+            box-shadow: none;
+        }
+    .tet-tour-item {
+        width: 100%;
+        height: unset;
+    }
+    .tet-tour-item-mask {
+        width: 100%;
+    }
+    .tet-tour-item-img {
+        width: 100%;
+        height: auto;
+    }
+    .tet-thanks-text {
+        padding: 0 32px;
+    }
+    .tet-thanks-title {
+        font-size: 18px;
+    }
+    .tet-thanks-desc {
+        font-size: 16px;
+    }
+}
