@@ -172,7 +172,7 @@
     width: 100%;
 }
 
-.tet-tour-list-content {
+.tet-container .tet-tour .tet-tour-list-content {
     padding: 48px;
     gap: 40px;
     display: flex;
@@ -180,7 +180,7 @@
     justify-content: center;
 }
 
-.tet-tour-item {
+.tet-container .tet-tour-item {
     position: relative;
     padding: 12px;
     width: 230px;
@@ -188,20 +188,20 @@
     /* background: url('/images/tour/tour_mask.png') no-repeat; */
 }
 
-.tet-tour-item-mask {
+.tet-container .tet-tour-item-mask {
     width: 230px;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.tet-tour-item-img {
+.tet-container .tet-tour-item-img {
     width: 207px;
     height: 122px;
     object-fit: cover;
 }
 
-.tet-tour-item-name {
+.tet-container .tet-tour-item-name {
     position: relative;
     z-index: 1;
     color: #FFF;
@@ -218,7 +218,7 @@
     /* 14.286% */
 }
 
-.tet-tour-item-price {
+.tet-container .tet-tour-item-price {
     position: relative;
     z-index: 1;
     color: #EFE13D;
@@ -230,7 +230,7 @@
     line-height: normal;
 }
 
-.tet-tour-item-order {
+.tet-container .tet-tour-item-order {
     display: block;
     position: relative;
     z-index: 1;
@@ -249,24 +249,24 @@
     line-height: 32px;
 }
 
-.tet-contact {
+.tet-container .tet-contact {
     padding: 180px 0;
     display: flex;
     gap: 90px;
     align-items: center;
 }
 
-.tet-contact-banner {
+.tet-container .tet-contact .tet-contact-banner {
     max-width: 880px;
     width: 38%;
 }
 
-.tet-contact-form {
+.tet-container .tet-contact .tet-contact-form {
     max-width: 617px;
     width: 52%;
 }
 
-.tet-form-container {
+.tet-container .tet-form-container {
     width: 100%;
     height: 436px;
     background: url('/images/form-mask.png') no-repeat center center;
@@ -276,7 +276,7 @@
     gap: 32px;
 }
 
-.tet-contact-header {
+.tet-container .tet-contact-header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -284,11 +284,11 @@
     gap: 44px;
 }
 
-.tet-contact-img {
+.tet-container .tet-contact-img {
     width: 80%;
 }
 
-.tet-form-title {
+.tet-container .tet-form-title {
     text-align: center;
     color: #E4E25B;
     font-family: UTM Penumbra;
@@ -299,13 +299,13 @@
     /* 114.286% */
 }
 
-.tet-form-list {
+.tet-container .tet-form-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.tet-form-input {
+.tet-container .tet-form-input {
     height: 58px;
     border-radius: 500px;
     outline: none;
@@ -314,7 +314,7 @@
     background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
 }
 
-.tet-form-input::placeholder {
+.tet-container .tet-form-input::placeholder {
     color: #E29561;
 
     font-family: Mulish;
@@ -325,7 +325,7 @@
     /* 188.235% */
 }
 
-.tet-form-destination {
+.tet-container .tet-form-destination {
     height: 58px;
     font-family: Mulish;
     font-size: 17px;
@@ -338,7 +338,7 @@
     background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
 }
 
-.tet-form-submit {
+.tet-container .tet-form-submit {
     border: none;
     background-color: transparent;
     width: 334px;
@@ -346,28 +346,28 @@
     margin-top: 28px;
 }
 
-.tet-form-submit-img {
+.tet-container .tet-form-submit-img {
     width: 100%;
 }
 
 /* TET THANKS */
-.tet-thanks {
+.tet-container .tet-thanks {
     margin-top: 120px;
     padding: 90px 0;
     background-color: #940013;
     display: flex;
     flex-direction: column;
     gap: 40px;
-        box-shadow: 0px 9px 11px 4px #B80018 inset;
+    box-shadow: 0px 9px 11px 4px #B80018 inset;
 }
 
-.tet-thanks-text {
+.tet-container .tet-thanks-text {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.tet-thanks-title {
+.tet-container .tet-thanks-title {
     color: #E5E158;
     text-align: center;
     font-family: UTM Penumbra;
@@ -378,7 +378,7 @@
     /* 88.889% */
 }
 
-.tet-thanks-desc {
+.tet-container .tet-thanks-desc {
     max-width: 451px;
     margin: 0 auto;
     color: #F1F6B1;
@@ -391,28 +391,28 @@
     /* 136.364% */
 }
 
-.tet-thanks-slider {
+.tet-container .tet-thanks-slider {
     width: 100%;
     max-height: 277px;
 }
 
-.slider-image-item {
+.tet-container .slider-image-item {
     height: 277px;
 }
 
 /* Footer */
-.tet-footer {
+.tet-container .tet-footer {
     border-top: 4px solid #E5E056;
     overflow: hidden;
 }
 
-.tet-footer-divider {
+.tet-container .tet-footer-divider {
     height: 57px;
     width: 1px;
     background-color: #fff;
 }
 
-.tet-footer-mask {
+.tet-container .tet-footer-mask {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -480,7 +480,7 @@
     /* 133.333% */
 }
 
-.tet-info-company {
+.tet-container .tet-info-company {
     max-width: 232px;
     text-transform: uppercase;
     color: #FFF;
@@ -492,13 +492,13 @@
     /* 65.217% */
 }
 
-.tet-info-right {
+.tet-container .tet-info-right {
     display: flex;
     gap: 40px;
     height: 45px;
 }
 
-.tet-tongdai-text {
+.tet-container .tet-tongdai-text {
     color: #fff;
     text-align: center;
     font-family: UTM Penumbra;
@@ -509,7 +509,7 @@
     /* 118.75% */
 }
 
-.tet-tongdai-num {
+.tet-container .tet-tongdai-num {
     color: #F1DA0A;
     text-align: center;
     font-family: UTM Penumbra;
@@ -561,7 +561,7 @@ div:where(.swal2-container).swal2-backdrop-show {
 
 @media only screen and (max-width: 1400px) {
 
-    .tet-header {
+    .tet-container .tet-header {
         gap: 32px;
     }
 
@@ -594,7 +594,7 @@ div:where(.swal2-container).swal2-backdrop-show {
         max-width: 100%;
     }
 
-    .tet-header {
+    .tet-container .tet-header {
         max-width: unset;
         gap: 60px;
         justify-content: center;
@@ -608,18 +608,20 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 258px;
     }
 
-    .tet-contact-img {
+    .tet-container .tet-contact-img {
         width: 300px;
         max-width: unset;
     }
-    .tet-footer-bottom .tet-footer-mask {
+
+    .tet-container .tet-footer-mask {
         position: relative;
         display: none;
     }
 
-        .tet-footer .tet-footer-bottom {
-            height: auto;
-        }
+    .tet-footer .tet-footer-bottom {
+        height: auto;
+    }
+
     .tet-footer .tet-footer-bottom .tet-bottom-container {
         flex-direction: column;
         justify-content: center;
@@ -627,7 +629,8 @@ div:where(.swal2-container).swal2-backdrop-show {
         gap: 28px;
         padding: 40px 0 0 0;
     }
-    .tet-info-right {
+
+    .tet-container .tet-info-right {
         padding: 16px 0;
         height: unset;
         width: 100%;
@@ -655,8 +658,9 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 200px;
     }
 
-    .tet-header {
+    .tet-container .tet-header {
         gap: 24px;
+        justify-content: center;
     }
 
     .tet-header .tet-header-logo {
@@ -667,12 +671,12 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 240px;
     }
 
-    .tet-container .tet-contact .tet-contact-banner {
+    .tet-container .tet-contact .tet-container .tet-contact .tet-contact-banner {
         width: 47%;
         max-width: unset;
     }
 
-    .tet-tour {
+    .tet-container .tet-tour {
         padding: 0 32px;
     }
 
@@ -680,33 +684,33 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 200px;
     }
 
-    .tet-banner {
+    .tet-container .tet-banner {
         padding: 76px 32px 0 32px;
     }
 
-    .tet-top-logo-img {
+    .tet-container .tet-top-logo-img {
         width: 280px;
         height: auto;
     }
 
-    .tet-top-text-img {
+    .tet-container .tet-top-text-img {
         width: 280px;
         height: auto;
     }
 
-    .tet-contact-header {
+    .tet-container .tet-contact-header {
         padding: 32px 0;
     }
-    .tet-form-submit {
+
+    .tet-container .tet-form-submit {
         width: 240px;
         margin-top: 12px;
     }
-    .tet-container .tet-header {
-    justify-content: center;}
 
-    .tet-contact-form {
+    .tet-container .tet-contact .tet-contact-form {
         width: 440px;
     }
+
     .tet-container .tet-contact {
         gap: 60px;
     }
@@ -750,87 +754,91 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 180px;
     }
 
-    .tet-thanks-title {
+    .tet-container .tet-thanks-title {
         font-size: 28px;
     }
 
-    .tet-top-logo-img {
+    .tet-container .tet-top-logo-img {
         width: 240px;
     }
 
-    .tet-top-text-img {
+    .tet-container .tet-top-text-img {
         width: 240px;
     }
 
-    .tet-contact {
+    .tet-container .tet-contact {
         flex-direction: column;
     }
+
     .tet-container .tet-contact .tet-contact-banner {
         display: none;
     }
-        .tet-contact-form {
-            width: 100%;
-        }
-                .tet-form-container {
-                    padding: 36px;
-                }
-                                .tet-form-submit {
-                                    margin-top: 0;
-                                }
-    
+
+    .tet-container .tet-contact .tet-contact-form {
+        width: 100%;
+    }
+
+    .tet-container .tet-form-container {
+        padding: 36px;
+    }
+
+    .tet-container .tet-form-submit {
+        margin-top: 0;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
-    .tet-tour-item {
+    .tet-container .tet-tour-item {
         width: 188px;
     }
 
-    .tet-tour-item-mask {
+    .tet-container .tet-tour-item-mask {
         width: 188px;
     }
 
-    .tet-tour-item-img {
+    .tet-container .tet-tour-item-img {
         width: 168px;
         height: 96px;
     }
 
-    .tet-tour-item-name {
+    .tet-container .tet-tour-item-name {
         margin-top: 4px;
     }
 
     .tet-container .tet-banner .tet-banner-text {
-    line-height: unset;
-    font-size: 15px;
-}
+        line-height: unset;
+        font-size: 15px;
+    }
 
     .tet-container .tet-tour {
         gap: 24px;
     }
 
-    .tet-contact {
+    .tet-container .tet-contact {
         gap: 24px;
         padding: 16px 0;
         flex-direction: column-reverse;
     }
 
-    .tet-thanks {
+    .tet-container .tet-thanks {
         margin-top: 0;
         padding: 40px 0;
     }
 
-    .tet-contact-header {
+    .tet-container .tet-contact-header {
         padding: 12px;
     }
 
-    .tet-contact-img {
+    .tet-container .tet-contact-img {
         width: 240px;
     }
 
-    .tet-top-logo-img {
+    .tet-container .tet-top-logo-img {
         width: 180px;
     }
 
-    .tet-top-text-img {
+    .tet-container .tet-top-text-img {
         width: 180px;
     }
 
@@ -839,15 +847,15 @@ div:where(.swal2-container).swal2-backdrop-show {
         gap: 12px;
     }
 
-    .tet-top-logo-img {
+    .tet-container .tet-top-logo-img {
         width: 120px;
     }
 
-    .tet-top-text-img {
+    .tet-container .tet-top-text-img {
         width: 120px;
     }
 
-    .footer-qr {
+    .tet-footer .tet-footer-bottom .footer-qr {
         position: relative;
         width: 100px;
     }
@@ -857,12 +865,12 @@ div:where(.swal2-container).swal2-backdrop-show {
         gap: 0;
     }
 
-    .tet-footer-mask {
+    .tet-container .tet-footer-mask {
         position: relative;
         display: none;
     }
 
-    .tet-bottom-container {
+        .tet-footer .tet-footer-bottom .tet-bottom-container {
         display: block;
         flex-direction: column;
         gap: 8px;
@@ -872,17 +880,17 @@ div:where(.swal2-container).swal2-backdrop-show {
         height: unset;
     }
 
-    .tet-info-right {
+    .tet-container .tet-info-right {
         flex-direction: column;
         gap: 4px;
         height: unset;
     }
 
-    .tet-footer-divider {
+    .tet-container .tet-footer-divider {
         display: none;
     }
 
-    .tet-info-company {
+    .tet-container .tet-info-company {
         max-width: unset;
         font-size: 14px;
     }
@@ -905,56 +913,60 @@ div:where(.swal2-container).swal2-backdrop-show {
         gap: 0;
     }
 
-    .footer-qr {
+    .tet-footer .tet-footer-bottom .footer-qr {
         padding-left: 12px;
     }
 
-    .tet-info-right {
+    .tet-container .tet-info-right {
         padding: 24px 12px;
         background-color: #003685;
         text-align: center;
     }
 
-    .footer-info-svg {
+    .tet-container .footer-info-svg {
         display: none;
     }
 
-    .tet-tongdai-text {
+    .tet-container .tet-tongdai-text {
         font-size: 12px;
     }
 
-    .tet-form-input,
-    .tet-form-destination {
+    .tet-container .tet-form-input,
+    .tet-container .tet-form-destination {
         height: 48px;
         padding: 0 16px;
     }
 
-    .tet-tongdai-num {
+    .tet-container .tet-tongdai-num {
         font-size: 24px;
     }
-    .tet-buttom-wrapper {
+
+    .tet-container .tet-buttom-wrapper {
         display: flex;
         gap: 8px;
         align-items: center;
         padding: 20px;
         justify-content: center;
     }
-        .tet-tour .tet-custom-nav-tab {
-            border-radius: 0px;
-            box-shadow: none;
-        }
-        .tet-form-container {
-            background-size: 100%;
-        }
-                .tet-form-submit {
-                    margin-top: 0;
-                }
+
+    .tet-tour .tet-custom-nav-tab {
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .tet-container .tet-form-container {
+        background-size: 100%;
+    }
+
+    .tet-container .tet-container {
+        margin-top: 0;
+    }
 
 }
 
 @media only screen and (max-width: 576px) {
 
-    .tet-header {
+    .tet-container .tet-header {
         flex-direction: column;
         padding-top: 40px;
         gap: 0;
@@ -970,7 +982,7 @@ div:where(.swal2-container).swal2-backdrop-show {
         padding: 0 12px;
     }
 
-    .tet-tour-list-content {
+    .tet-container .tet-tour .tet-tour-list-content {
         padding: 24px 0;
     }
 
@@ -997,41 +1009,41 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 120px;
     }
 
-    .tet-tour-item {
+    .tet-container .tet-tour-item {
         width: 124px;
         height: unset;
         padding: 0;
     }
 
-    .tet-tour-item-mask {
+    .tet-container .tet-tour-item-mask {
         width: 100%;
     }
 
-    .tet-tour-item-img {
+    .tet-container .tet-tour-item-img {
         width: 100%;
         height: auto;
         padding: 4px;
     }
 
-    .tet-tour-item-name {
+    .tet-container .tet-tour-item-name {
         font-size: 11px;
         margin: 0;
     }
 
-    .tet-tour-item-price {
+    .tet-container .tet-tour-item-price {
         font-size: 12px;
     }
 
-    .tet-thanks-text {
+    .tet-container .tet-thanks-text {
         padding: 0 32px;
         gap: 4px;
     }
 
-    .tet-thanks-title {
+    .tet-container .tet-thanks-title {
         font-size: 18px;
     }
 
-    .tet-thanks-desc {
+    .tet-container .tet-thanks-desc {
         font-size: 16px;
     }
 
@@ -1039,7 +1051,7 @@ div:where(.swal2-container).swal2-backdrop-show {
         width: 240px;
     }
 
-    .tet-tour-item-order {
+    .tet-container .tet-tour-item-order {
         font-size: 10px;
         width: unset;
         height: unset;
@@ -1049,11 +1061,11 @@ div:where(.swal2-container).swal2-backdrop-show {
         margin-top: 0;
     }
 
-    .tet-tour-list-content {
+    .tet-container .tet-tour .tet-tour-list-content {
         gap: 24px;
     }
 
-    .tet-form-container {
+    .tet-container .tet-form-container {
         background-size: unset;
         border-radius: 12px;
         border: 2px solid #F2DD21;
@@ -1063,11 +1075,11 @@ div:where(.swal2-container).swal2-backdrop-show {
         gap: 12px;
     }
 
-    .tet-form-title {
+    .tet-container .tet-form-title {
         font-size: 18px;
     }
 
-    .tet-form-submit {
+    .tet-container .tet-form-submit {
         margin-top: 0;
         height: unset;
         width: 150px;
