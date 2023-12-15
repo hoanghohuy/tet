@@ -239,6 +239,7 @@
     margin: 0 auto;
     margin-top: 4px;
     border-radius: 20px;
+    text-align: center;
     border: 3px solid #F2DD21;
     background: linear-gradient(180deg, #064ED4 19.1%, #003685 100%);
     color: #FFF;
@@ -247,6 +248,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
+    text-decoration: none;
+}
+.tet-container .tet-tour-item-order:hover {
+    transform: scale(1.1);
 }
 
 .tet-container .tet-contact {
@@ -300,6 +305,7 @@
 }
 
 .tet-container .tet-form-list {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -312,11 +318,13 @@
     border: 2px solid #DF8D57;
     padding: 0 28px;
     background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .tet-container .tet-form-input::placeholder {
     color: #E29561;
-
     font-family: Mulish;
     font-size: 17px;
     font-style: normal;
@@ -326,6 +334,8 @@
 }
 
 .tet-container .tet-form-destination {
+    -webkit-appearance: none;
+    appearance: none;
     height: 58px;
     font-family: Mulish;
     font-size: 17px;
@@ -338,6 +348,16 @@
     background: linear-gradient(180deg, #FFF 0%, #FEE5D0 100%);
 }
 
+
+
+.tet-container .tet-form-destination::after {
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
 .tet-container .tet-form-submit {
     border: none;
     background-color: transparent;
@@ -348,6 +368,10 @@
 
 .tet-container .tet-form-submit-img {
     width: 100%;
+}
+
+.tet-container .tet-form-submit-img:hover {
+    transform: scale(1.1);
 }
 
 /* TET THANKS */
@@ -519,38 +543,42 @@
     /* 63.333% */
 }
 
-.swal2-container .swal2-title {
+.tet-custom-popup-title {
     color: #E4E25B;
-    width: 500px;
-    margin: 0 auto;
     text-align: center;
     font-family: UTM Penumbra;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 34px;
-    /* 85.714% */
 }
 
-.swal2-container .swal2-html-container {
-    color: #E4E25B;
-    text-align: center;
-    font-family: Mulish;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-div:where(.swal2-container) div:where(.swal2-popup) {
+.tet-custom-popup-container {
     padding: 55px;
     width: 620px;
     height: 436px;
     background: url('/images/popup_mask.png') no-repeat center center;
 }
 
+.tet-custom-popup-text {
+    color: #E4E25B !important;
+    text-align: center !important;
+    font-family: Mulish;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+}
+
 div:where(.swal2-container).swal2-backdrop-show {
     background: rgba(57, 0, 0, 0.94);
+}
+
+.tet-custom-confirm {
+    width: 200px;
+    border: none !important;
+    background: transparent !important;
+}
+
+.tet-popup-xacnhan-btn {
+    width: 100%;
 }
 
 @media only screen and (max-width: 1700px) {
@@ -823,15 +851,16 @@ div:where(.swal2-container).swal2-backdrop-show {
 
     .tet-container .tet-thanks {
         margin-top: 0;
-        padding: 40px 0;
+        padding: 32px 0;
     }
 
     .tet-container .tet-contact-header {
         padding: 12px;
+        gap: 0px;
     }
 
     .tet-container .tet-contact-img {
-        width: 240px;
+        width: 100%;
     }
 
     .tet-container .tet-top-logo-img {
@@ -843,8 +872,9 @@ div:where(.swal2-container).swal2-backdrop-show {
     }
 
     .tet-footer .tet-top-container {
-        padding: 32px;
+        padding: 32px 12px;
         gap: 12px;
+        justify-content: space-evenly;
     }
 
     .tet-container .tet-top-logo-img {
@@ -861,7 +891,7 @@ div:where(.swal2-container).swal2-backdrop-show {
     }
 
     .tet-footer .footer-info-container {
-        padding-left: 12px;
+        padding-left: 0px;
         gap: 0;
     }
 
@@ -938,7 +968,7 @@ div:where(.swal2-container).swal2-backdrop-show {
     }
 
     .tet-container .tet-tongdai-num {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .tet-container .tet-buttom-wrapper {
@@ -961,6 +991,16 @@ div:where(.swal2-container).swal2-backdrop-show {
     .tet-container .tet-container {
         margin-top: 0;
     }
+    .tet-custom-popup-title {
+        font-size: 18px !important;
+    }
+        .tet-custom-popup-container {
+            padding: 12px;
+            height: 280px;
+        }
+        .tet-custom-popup-text {
+            font-size: 16px !important;
+        }
 
 }
 
@@ -1053,11 +1093,11 @@ div:where(.swal2-container).swal2-backdrop-show {
 
     .tet-container .tet-tour-item-order {
         font-size: 10px;
-        width: unset;
+        width: 80px;
         height: unset;
         line-height: unset;
         border-width: 1px;
-        padding: 4px 12px;
+        padding: 3px 12px;
         margin-top: 0;
     }
 
@@ -1087,5 +1127,9 @@ div:where(.swal2-container).swal2-backdrop-show {
 
     .tet-header .tet-header-logo {
         width: 120px;
+    }
+    .tet-footer .tet-footer-bottom .footer-info-text {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
